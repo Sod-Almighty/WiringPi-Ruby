@@ -52,6 +52,9 @@ module WiringPi
     def pin_mode(pin, mode)
       Wiringpi.pinMode(pin, mode)
     end
+    def pin_mode_alt(pin, mode)
+      Wiringpi.pinModeAlt(pin, mode)
+    end
 
     def pull_up_dn_control(pin,mode)
       Wiringpi.pullUpDnControl(pin, mode)
